@@ -1,5 +1,7 @@
 #include "HelloWorldScene.h"
 
+#include "BaseNode.h"
+
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -71,6 +73,12 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
+
+
+
+	// 写自己的代码
+	auto node = BaseNode::create();
+	this->addChild(node);
     
     return true;
 }
