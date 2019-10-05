@@ -38,7 +38,7 @@ void GameBottom::touchCallBack(Ref *sender, Widget::TouchEventType controlEvent)
 		if (this->m_buttonSpinState == false)
 		{
 			this->m_buttonSpinState = true;
-			EventCustom myEvent("BEGIN");
+			EventCustom myEvent(EVENT_NAME_REELTABLE_ROLL);
 			char data[20] = "I am data of user!";
 			myEvent.setUserData(data);
 			this->_eventDispatcher->dispatchEvent(&myEvent);

@@ -67,8 +67,8 @@ void BaseReelUnit::createSymbolCsbFullReel()
 	this->m_symbolUnit->loadDataUI(this->m_roll_list1[this->m_symbolCurrentNum]);
 	//ÉèÖÃ×ø±ê
 	
-	int n_size = this->m_symbolUnitList.size();
-	if (n_size == 0)
+	//int n_size = this->m_symbolUnitList.size();
+	if (this->m_symbolUnitList.size() == 0)
 	{
 		//CCLOG("---------------================================================================================================");
 		this->m_symbolUnit->setPosition(this->m_size.width / 2, -this->m_size.height / 2);

@@ -43,7 +43,7 @@ bool LevelLayer::init()
 void LevelLayer::onEnter()
 {
 	Layer::onEnter();
-	auto listenerCustom = EventListenerCustom::create("BEGIN", [&](EventCustom* event) {
+	auto listenerCustom = EventListenerCustom::create(EVENT_NAME_REELTABLE_ROLL, [&](EventCustom* event) {
 		CCLOG("Custom Event,User Data:%s", event->getUserData());
 		this->baseReelUnit->startJumpAction();
 	});

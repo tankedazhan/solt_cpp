@@ -7,6 +7,9 @@ desc:     UI¹ÜÀíÆ÷
 #ifndef __ENUMDEFINE_H__
 #define __ENUMDEFINE_H__
 
+
+#define EVENT_NAME_REELTABLE_ROLL "EVENT_NAME_REELTABLE_ROLL"
+
 enum UI_GROUP_DEFINE	//layer²ã×é
 {
 	Main = 1000,
