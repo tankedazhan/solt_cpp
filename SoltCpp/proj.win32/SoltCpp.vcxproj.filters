@@ -13,6 +13,18 @@
     <Filter Include="src\base">
       <UniqueIdentifier>{1c85ce4e-ed05-4bd0-a9a1-7a0efd4e9953}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\framework">
+      <UniqueIdentifier>{3f182f4a-c483-4ec0-956d-5c4cbb850972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scene">
+      <UniqueIdentifier>{2db9fef0-e670-4415-87ba-cc2134b23b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\views">
+      <UniqueIdentifier>{4bfc2d32-c74f-407d-9395-8073a850cc93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\config">
+      <UniqueIdentifier>{44d30318-381a-4726-ba0f-edf01ab33c16}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +39,63 @@
     <ClCompile Include="..\Classes\BaseNode.cpp">
       <Filter>src\base</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\BaseLayer.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CSBUtil.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SceneManager.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoadingScene.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HallScene.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelScene.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoadingLayer.cpp">
+      <Filter>src\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIUtil.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIManager.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIDefine.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BaseScene.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HallLayer.cpp">
+      <Filter>src\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelLayer.cpp">
+      <Filter>src\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTop.cpp">
+      <Filter>src\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BaseSymbolUnit.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WolfConfig.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BaseReelUnit.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EasyFunc.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameBottom.cpp">
+      <Filter>src\views</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -40,6 +109,66 @@
     </ClInclude>
     <ClInclude Include="..\Classes\BaseNode.h">
       <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BaseLayer.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CSBUtil.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SceneManager.h">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoadingScene.h">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HallScene.h">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelScene.h">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoadingLayer.h">
+      <Filter>src\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIUtil.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIManager.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIDefine.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BaseScene.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnumDefine.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HallLayer.h">
+      <Filter>src\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelLayer.h">
+      <Filter>src\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTop.h">
+      <Filter>src\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BaseSymbolUnit.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WolfConfig.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BaseReelUnit.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EasyFunc.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameBottom.h">
+      <Filter>src\views</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

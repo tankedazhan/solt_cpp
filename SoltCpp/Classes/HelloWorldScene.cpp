@@ -1,8 +1,12 @@
 #include "HelloWorldScene.h"
 
 #include "BaseNode.h"
+#include "BaseLayer.h"
+
+#include "ui/CocosGUI.h"
 
 USING_NS_CC;
+using namespace cocos2d::ui;
 
 Scene* HelloWorld::createScene()
 {
@@ -77,8 +81,23 @@ bool HelloWorld::init()
 
 
 	// 写自己的代码
-	auto node = BaseNode::create();
-	this->addChild(node);
+	/*auto node = BaseNode::create();
+	this->addChild(node,1);
+
+	node->addCsb("GameBuy.csb",1);*/
+
+	auto layer = BaseLayer::create();
+	this->addChild(layer, 1);
+	layer->addCsb("GameBuy.csb");
+
+	//cocos2d::ui::Widget
+	
+	TextBMFont* text = (TextBMFont*)layer->findChild("Text1");
+	text->setString("zsfdfsfgsgdzxghjk,fvjkzbv cjk,");
+
+
+	//auto m_csbVar = BaseLayer::
+	//auto button_yes = (Node*)m_csbVar["ButtonYes"];
     
     return true;
 }
