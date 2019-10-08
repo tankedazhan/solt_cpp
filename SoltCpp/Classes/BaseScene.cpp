@@ -7,7 +7,7 @@ BaseScene::BaseScene()
 }
 BaseScene::~BaseScene()
 {
-	CCLOG("BaseScene::~BaseScene");
+	//CCLOG("BaseScene::~BaseScene");
 	delete this->m_uimagager;
 }
 const char* BaseScene::getSceneName() const

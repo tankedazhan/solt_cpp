@@ -35,12 +35,14 @@ public:
 	void goToHallScene();
 	void goToLevelSceneByLoading();
 	void goToLevelScene();
+	SCENE_TYPE getNextSceneType();
 
 	SCENE_TYPE getSceneType() { return m_sceneType; }
 
 	BaseScene * getCurrentScene() { return m_currentScene; }
 private:
 	SCENE_TYPE m_sceneType;
+	SCENE_TYPE m_nextSceneType;
 	BaseScene * m_currentScene;
 };
 

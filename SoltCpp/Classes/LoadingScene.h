@@ -20,6 +20,8 @@ public:
 	LoadingScene::~LoadingScene();
 	const char* getSceneName() const;
 	CREATE_FUNC(LoadingScene);
+	//static LoadingScene* create(SCENE_TYPE sceneType);
+	//virtual bool init(SCENE_TYPE sceneType);
 	virtual void onEnterTransitionDidFinish();
 private:
 	int m_ac;

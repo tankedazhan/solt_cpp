@@ -1,6 +1,7 @@
 #include "LevelLayer.h"
 #include "SceneManager.h"
 #include "BaseSymbolUnit.h"
+#include "WolfConfig.h"
 
 LevelLayer::LevelLayer()
 {
@@ -50,7 +51,7 @@ void LevelLayer::onEnter()
 	this->_eventDispatcher->addEventListenerWithFixedPriority(listenerCustom, 1);
 
 	auto listenerCustom1 = EventListenerCustom::create("STOP", [&](EventCustom* event) {
-		this->baseReelUnit->stopRoll();
+		this->baseReelUnit->stopRoll(WolfConfig::getInstance()->getWinNumStr());
 	});
 	this->_eventDispatcher->addEventListenerWithFixedPriority(listenerCustom1, 1);
 }

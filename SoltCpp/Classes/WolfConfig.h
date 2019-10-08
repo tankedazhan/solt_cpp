@@ -17,6 +17,17 @@ using namespace cocostudio;
 using namespace cocostudio::timeline;
 
 
+class SymbolCsbConfig
+{
+public:
+	string m_file;
+	string m_resourcetype;
+	int m_count;
+	SymbolCsbConfig();
+	SymbolCsbConfig(string file, string resourcetype, int count);
+	~SymbolCsbConfig();
+};
+
 class WolfConfig
 {
 public:
@@ -25,19 +36,29 @@ public:
 
 	static WolfConfig* getInstance();
 	string getSymbolPath(int symbolId);
+	string getResourcetype(int symbolId);
 	Size getSymbolSize();
 	int getNum();
 	string getRollList1();
 	int getSpeed();
-	
+	string getWinNumStr();
+	std::unordered_map<int, string> getHallResourceOfPlist();
+	std::unordered_map<int, string> getWolfLevelResourceOfPlist();
+
+	const SymbolCsbConfig& getSymbolCsbConfig( int symbolId ) const;
+	const std::unordered_map<int, SymbolCsbConfig>& getSymbolCsbConfig();
+
 	//Layer *getUIFromScene(std::unordered_map<std::string, string*>& uiParam);
 private:
-	std::unordered_map<int, string> m_symbolCsbPath;
+	std::unordered_map<int, SymbolCsbConfig> m_symbolCsbConfig;
 	Size m_size;
 	int m_num;//ÐÅºÅ¿éÊýÁ¿
 	string m_roll_list1;
 	int m_speed;
+	string m_winNumStr;
 	//CCArray m_roll_list1;
+	std::unordered_map<int, string> m_hallResourceOfPlist;
+	std::unordered_map<int, string> m_wolfLevelResourceOfPlist;
 };
 
 

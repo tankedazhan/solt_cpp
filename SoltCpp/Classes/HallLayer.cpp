@@ -29,5 +29,5 @@ bool HallLayer::init()
 void HallLayer::touchCallBack(Ref *sender, Widget::TouchEventType controlEvent)
 {
 	CCLOG("HallLayer::touchCallBack----------------------------------HallLayer::touchCallBack");
-	SceneManager::getInstance()->goToLevelScene();
+	SceneManager::getInstance()->goToLevelSceneByLoading();
 }

@@ -14,9 +14,12 @@ desc:     loading²ã
 #include "BaseLayer.h"
 #include "UIManager.h"
 #include "SceneManager.h"
+#include <editor-support/cocostudio/CocoStudio.h>
+#include "ui/cocosGUI.h"
 USING_NS_CC;
 using namespace std;
 using namespace cocostudio;
+using namespace cocos2d::ui;
 
 class LoadingLayer :public BaseLayer
 {
@@ -26,9 +29,21 @@ public:
 	virtual bool init();
 	//void loadUi();
 	CREATE_FUNC(LoadingLayer);
-	void goToHallOrLevelScene();
+	//void goToHallOrLevelScene();
+	void loadHallResource();
+	void loadHallPlist();
+	void updataPlistOfHall(float dt);
+	void loadLevelResource();
+	void loadLevelPlist();
+	void updataPlistOfLevel(float dt);
 
 	virtual void onEnter();
+private:
+	std::unordered_map<int, string> m_plist;
+	int m_index;
+	LoadingBar* m_loadingBar;
+	float m_percent;
+
 };
 
 

@@ -161,6 +161,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\LoadingLayer.cpp" />
     <ClCompile Include="..\Classes\LoadingScene.cpp" />
     <ClCompile Include="..\Classes\SceneManager.cpp" />
+    <ClCompile Include="..\Classes\SymbolCsbCache.cpp" />
     <ClCompile Include="..\Classes\UIDefine.cpp" />
     <ClCompile Include="..\Classes\UIManager.cpp" />
     <ClCompile Include="..\Classes\UIUtil.cpp" />
@@ -187,6 +188,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\LoadingLayer.h" />
     <ClInclude Include="..\Classes\LoadingScene.h" />
     <ClInclude Include="..\Classes\SceneManager.h" />
+    <ClInclude Include="..\Classes\SymbolCsbCache.h" />
     <ClInclude Include="..\Classes\UIDefine.h" />
     <ClInclude Include="..\Classes\UIManager.h" />
     <ClInclude Include="..\Classes\UIUtil.h" />

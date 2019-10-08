@@ -14,6 +14,35 @@ LoadingScene::~LoadingScene()
 }
 
 
+// ÖØÐ´create
+//LoadingScene* LoadingScene::create( SCENE_TYPE sceneType )
+//{ 
+//	LoadingScene *pRet = new(std::nothrow) LoadingScene();
+//	if (pRet && pRet->init(sceneType))
+//	{
+//		pRet->autorelease(); 
+//		return pRet; 
+//	} 
+//	else 
+//	{ 
+//		delete pRet; 
+//		pRet = nullptr; 
+//		return nullptr; 
+//	} 
+//}
+//
+//bool LoadingScene::init(SCENE_TYPE sceneType)
+//{
+//	if (BaseScene::init())
+//	{
+//		this->m_sceneType = sceneType;
+//		return true;
+//	}
+//	return false;
+//}
+
+
+
 
 void LoadingScene::onEnterTransitionDidFinish()
 {
